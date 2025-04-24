@@ -23,8 +23,8 @@ public class Main {
         try {
             Product invalidProduct = sale.getProductAt(10);
             System.out.println("Product: " + invalidProduct.getName());
-        } catch (IndexOutOfBoundsException i) {
-            System.out.println(i.getMessage());
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
         }
 
 

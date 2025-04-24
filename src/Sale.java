@@ -19,7 +19,7 @@ public class Sale {
 
     public void totalCalculation() throws EmptySaleException {
         if (products.isEmpty()) {
-            throw new EmptySaleException();
+            throw new EmptySaleException("To make a sale you must first add products");
 
         }
 
